@@ -1,0 +1,49 @@
+.banner {
+  width: 100%; 
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  margin-top: 200px;
+}
+
+.banner video {
+  width: 100%; 
+  height: 500px;
+  object-fit: cover; 
+}
+
+.banner-content{
+  position: absolute;
+  top: 90px;
+  left: 90px;
+}
+
+.banner h1{
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 70px;
+}
+
+.banner h1 span{
+    color: #14FF00;
+}
+
+.banner button{
+  width: 318px;
+  height: 58px;
+  background-color: #14FF00;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 80px;
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  font-family:  "Hammersmith One", sans-serif;
+}
+
+.banner-content.slide-in {
+  opacity: 1;
+  transform: translateX(0); 
+}

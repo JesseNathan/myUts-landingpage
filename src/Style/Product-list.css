@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.product-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.product-list {
+  display: flex;
+  overflow: hidden;
+  width: 80%;
+  scroll-behavior: smooth;
+}
+
+.product-item {
+  background-color: #222;
+  border-radius: 10px;
+  width: 250px;
+  padding: 20px;
+  margin: 0 15px;
+  text-align: start;
+  flex-shrink: 0;
+  color: white;
+}
+
+.product-item:hover{
+  transform: scale(.97);
+}
+  
+.product-item:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #210cae 0%, #4dc9e6 100% );
+    transform: translate3d(0px, 20px, 0) scale(0.95);
+    filter: blur(20px);
+    opacity: var(0.7);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
+
+.product-item::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+}
+
+.product-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.arrow:hover {
+  color: #63e6be;
+}
+
+.product-quantity-container select{
+  border-radius: 5px;
+  width: 50px;
+  text-align: center;
+  margin-top: 10px;
+  padding: 2px 0;
+  outline: none;
+}
+
+.buyStuff{
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.buyStuff button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 7px;
+  background: linear-gradient(90deg, #2AA9DF, #AE0CA7);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  outline: none;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.buyStuff button:hover {
+  background: linear-gradient(90deg, #AE0CA7, #2AA9DF); 
+}
+
+.buyStuff button:active {
+  background: linear-gradient(90deg, #8B008B, #1E90FF); 
+  transform: scale(0.95); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+
+.buyStuff .select-quantity{
+  transform: translateY(-20%);
+}

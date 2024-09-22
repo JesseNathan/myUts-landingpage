@@ -1,0 +1,19 @@
+@keyframes slideIn {
+  from {
+    filter: blur(5px);
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 1s ease-in;
+}
+to {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateX(0);
+}
+}
+
+.content-text {
+  animation: slideIn 1.5s ease-out; 
+  opacity: 0; 
+  animation-fill-mode: forwards; 
+}
