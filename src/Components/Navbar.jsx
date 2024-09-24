@@ -8,6 +8,10 @@ import { faHeart as faHeartRegular } from '@fortawesome/free-regular-svg-icons';
 export default function Navbar() {
   const [quantity, setQuantity] = useState('0')
 
+  const handlingQuantity = () => {
+    setQuantity(quantity + 1)
+  }
+
   return (
     <nav>
       <div className="left-nav">

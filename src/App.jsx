@@ -70,7 +70,7 @@ function App() {
         </div>
         <div className="item">
           <img src={img3} alt="" />
-          <p><span>Easy Return</span> and <span>30-day</span> money <br /> back guaranty. <span style={{textDecoration: "underline", fontWeight: "normal"}}>More information</span></p>
+          <p><span>Easy Return</span> and <span>30-day</span> money <br /> back guaranty. <span style={{textDecoration: "underline", fontWeight: "normal", cursor: 'pointer'}}>More information</span></p>
         </div>
       </div>
     </div>

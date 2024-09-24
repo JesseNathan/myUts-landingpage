@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import '../Style/product-list.css';
+import '../Style/Product-list.css';
+import CartQuantity from './Cart-Quantity'
+
 
 export default function Products() {
   const [products, setProducts] = useState([
@@ -60,7 +62,7 @@ export default function Products() {
             <p>{product.price}</p>
 
             <div className="buyStuff">
-              <button>Add to Cart</button>
+              <CartQuantity />
               <div className="product-quantity-container">
                 <select className={`js-quantity-selector-${product.id} select-quantity`}>
                   <option selected value="1">1</option>
